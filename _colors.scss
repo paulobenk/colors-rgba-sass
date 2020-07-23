@@ -1,24 +1,19 @@
-$app-primary: (#003f87, "app-primary");
-$app-secondary: (#3a3f52, "app-secondary");
+$app-pri: #00802b, "app-pri";
+$app-sec: #fbdd3c, "app-sec";
+$app-body: #f0f0f4;
 
-$percent: 0.05 "-05", 0.1 "-10", 0.2 "-20", 0.3 "-30", 0.4 "-40", 0.5 "-50", 0.6 "-60", 0.7 "-70", 0.8 "-80", 0.9 "-90";
+$percent: 0.05 "-5", 0.1 "-10", 0.2 "-20", 0.3 "-30", 0.4 "-40", 0.5 "-50", 0.6 "-60", 0.7 "-70", 0.8 "-80", 0.9 "-90";
 
 @mixin listClassColors($my-color-name) {
     .#{nth($my-color-name, 2)}-color {
-        color: $my-color-name;
-    }
-    .#{nth($my-color-name, 2)}-border {
-        background-color: $my-color-name;
+        color: nth($my-color-name, 1)
     }
     .#{nth($my-color-name, 2)}-bg {
-        border-color: $my-color-name;
+        background-color: nth($my-color-name, 1)
     }
-
-    @debug (
-        ".#{nth($my-color-name, 2)}-color",
-        ".#{nth($my-color-name, 2)}-border",
-        ".#{nth($my-color-name, 2)}-bg",
-    );
+    .#{nth($my-color-name, 2)}-border {
+        border-color: nth($my-color-name, 1)
+    }
 
     @each $p-name, $c-name in $percent {
         $rgba-color: rgba(
@@ -29,20 +24,14 @@ $percent: 0.05 "-05", 0.1 "-10", 0.2 "-20", 0.3 "-30", 0.4 "-40", 0.5 "-50", 0.6
         .#{nth($my-color-name, 2)}-color#{$c-name} {
             color: $rgba-color;
         }
-        .#{nth($my-color-name, 2)}-border#{$c-name} {
+        .#{nth($my-color-name, 2)}-bg#{$c-name} {
             background-color: $rgba-color;
         }
-        .#{nth($my-color-name, 2)}-bg#{$c-name} {
+        .#{nth($my-color-name, 2)}-border#{$c-name} {
             border-color: $rgba-color;
         }
-
-        @debug (
-            ".#{nth($my-color-name, 2)}-color#{$c-name}",
-            ".#{nth($my-color-name, 2)}-border#{$c-name}",
-            ".#{nth($my-color-name, 2)}-bg#{$c-name}",
-        );
     }
 }
 
-@include listClassColors($app-primary);
-@include listClassColors($app-secondary);
+@include listClassColors($app-pri);
+@include listClassColors($app-sec);
