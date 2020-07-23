@@ -17,7 +17,8 @@ app-primary:
  - .app-primary-color-60 
  - .app-primary-color-70 
  - .app-primary-color-80 
- - .app-primary-color-90 
+ - .app-primary-color-90
+
  - .app-primary-border   
  - .app-primary-border-05
  - .app-primary-border-10
@@ -29,6 +30,7 @@ app-primary:
  - .app-primary-border-70
  - .app-primary-border-80
  - .app-primary-border-90
+ 
  - .app-primary-bg
  - .app-primary-bg-05
  - .app-primary-bg-10
@@ -40,7 +42,7 @@ app-primary:
  - .app-primary-bg-70
  - .app-primary-bg-80
  - .app-primary-bg-90
- 
+
 app-secondary:
  - .app-secondary-color   
  - .app-secondary-color-05
@@ -54,7 +56,7 @@ app-secondary:
  - .app-secondary-color-80
  - .app-secondary-color-90
 
- - .app-secondary-border    
+ - .app-secondary-border
  - .app-secondary-border-05 
  - .app-secondary-border-10 
  - .app-secondary-border-20 
