@@ -5,78 +5,83 @@ Como criar uma escala de cores RGBA com Sass.
   - background-color
 
 ## CSS Class name 
-
-app-primary:
- - .app-primary-color  
- - .app-primary-color-05 
- - .app-primary-color-10 
- - .app-primary-color-20 
- - .app-primary-color-30 
- - .app-primary-color-40 
- - .app-primary-color-50 
- - .app-primary-color-60 
- - .app-primary-color-70 
- - .app-primary-color-80 
- - .app-primary-color-90
-
- - .app-primary-border   
- - .app-primary-border-05
- - .app-primary-border-10
- - .app-primary-border-20
- - .app-primary-border-30
- - .app-primary-border-40
- - .app-primary-border-50
- - .app-primary-border-60
- - .app-primary-border-70
- - .app-primary-border-80
- - .app-primary-border-90
- 
- - .app-primary-bg
- - .app-primary-bg-05
- - .app-primary-bg-10
- - .app-primary-bg-20
- - .app-primary-bg-30
- - .app-primary-bg-40
- - .app-primary-bg-50
- - .app-primary-bg-60
- - .app-primary-bg-70
- - .app-primary-bg-80
- - .app-primary-bg-90
-
-
-app-secondary:
- - .app-secondary-color   
- - .app-secondary-color-05
- - .app-secondary-color-10
- - .app-secondary-color-20
- - .app-secondary-color-30
- - .app-secondary-color-40
- - .app-secondary-color-50
- - .app-secondary-color-60
- - .app-secondary-color-70
- - .app-secondary-color-80
- - .app-secondary-color-90
-
- - .app-secondary-border
- - .app-secondary-border-05 
- - .app-secondary-border-10 
- - .app-secondary-border-20 
- - .app-secondary-border-30 
- - .app-secondary-border-40 
- - .app-secondary-border-50 
- - .app-secondary-border-60 
- - .app-secondary-border-70 
- - .app-secondary-border-80 
- - .app-secondary-border-90 
-
- - .app-secondary-bg
- - .app-secondary-bg-05
- - .app-secondary-bg-10
- - .app-secondary-bg-20
- - .app-secondary-bg-30
- - .app-secondary-bg-40
- - .app-secondary-bg-50
- - .app-secondary-bg-60
- - .app-secondary-bg-70
- - .app-secondary-bg-80
- - .app-secondary-bg-90
+```sh
+const appPriColor = [
+  'app-pri-color',
+  'app-pri-color-90 ',
+  'app-pri-color-80',
+  'app-pri-color-70',
+  'app-pri-color-60',
+  'app-pri-color-50',
+  'app-pri-color-40',
+  'app-pri-color-30',
+  'app-pri-color-20',
+  'app-pri-color-10',
+  'app-pri-color-5',
+]
+const appSecColor = [
+  'app-sec-color',
+  'app-sec-color-90',
+  'app-sec-color-80',
+  'app-sec-color-70',
+  'app-sec-color-60',
+  'app-sec-color-50',
+  'app-sec-color-40',
+  'app-sec-color-30',
+  'app-sec-color-20',
+  'app-sec-color-10',
+  'app-sec-color-5',
+]
+const appPriBg = [
+  'app-pri-bg',
+  'app-pri-bg-90',
+  'app-pri-bg-80',
+  'app-pri-bg-70',
+  'app-pri-bg-60',
+  'app-pri-bg-50',
+  'app-pri-bg-40',
+  'app-pri-bg-30',
+  'app-pri-bg-20',
+  'app-pri-bg-10',
+  'app-pri-bg-5',
+]
+const appSecBg = [
+  'app-sec-bg',
+  'app-sec-bg-90',
+  'app-sec-bg-80',
+  'app-sec-bg-70',
+  'app-sec-bg-60',
+  'app-sec-bg-50',
+  'app-sec-bg-40',
+  'app-sec-bg-30',
+  'app-sec-bg-20',
+  'app-sec-bg-10',
+  'app-sec-bg-5',
+]
+const appPriBorder = [
+  'app-pri-border',
+  'app-pri-border-90',
+  'app-pri-border-80',
+  'app-pri-border-70',
+  'app-pri-border-60',
+  'app-pri-border-50',
+  'app-pri-border-40',
+  'app-pri-border-30',
+  'app-pri-border-20',
+  'app-pri-border-10',
+  'app-pri-border-5',
+]
+const appSecBorder = [
+  'app-sec-border',
+  'app-sec-border-90',
+  'app-sec-border-80',
+  'app-sec-border-70',
+  'app-sec-border-60',
+  'app-sec-border-50',
+  'app-sec-border-40',
+  'app-sec-border-30',
+  'app-sec-border-20',
+  'app-sec-border-10',
+  'app-sec-border-5',
+]
+```
